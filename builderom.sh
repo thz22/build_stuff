@@ -26,7 +26,10 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=ture
 echo ======= Export Done ======
 
 # Set up build environment
-source build/envsetup.sh 
+source build/envsetup.sh
+
+# Clone PrivateKeys
+git clone https://github.com/diasthiago11/keysz.git -b main vendor/lineage-priv/keys
 
 echo ====== Envsetup Done =======
 

@@ -36,5 +36,8 @@ echo ====== Envsetup Done =======
 # Lunch                                                                     
 lunch lineage_odessa-userdebug
 
+# Clean
+make installclean
+
 # Build
 make bacon

@@ -2,7 +2,7 @@ rm -rf .repo/local_manifests
 
 
 # repo init rom
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
 echo ==================
 echo Repo init success
 echo ==================
@@ -31,5 +31,7 @@ source build/envsetup.sh
 echo ====== Envsetup Done =======
 
 # Lunch                                                                     
-riseup odessa userdebug
-rise b
+lunch lineage_odessa-userdebug
+
+# Build
+make bacon

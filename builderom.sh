@@ -25,6 +25,9 @@ export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=ture 
 echo ======= Export Done ======
 
+# chmod
+chmod a+x device/motorola/odessa/applyPatches.sh
+
 # Set up build environment
 source build/envsetup.sh
 

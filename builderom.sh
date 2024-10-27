@@ -40,4 +40,4 @@ lunch lineage_odessa-userdebug
 make installclean
 
 # Build
-make bacon -j$(nproc --all)
+m bacon -j$(nproc --all)

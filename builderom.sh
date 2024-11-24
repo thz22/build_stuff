@@ -1,13 +1,13 @@
 rm -rf .repo/local_manifests
 
 # repo init rom
-repo init -u https://github.com/Project-PixelStar/manifest -b 14-qpr3 --git-lfs --depth 1
+repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs --depth 1
 echo ==================
 echo Repo init success
 echo ==================
 
 # Local manifests
-git clone https://github.com/diasthiago11/local_manifest_odessa.git -b pixelstar .repo/local_manifests
+git clone https://github.com/diasthiago11/local_manifest_odessa.git -b los21 .repo/local_manifests
 echo ============================
 echo Local manifest clone success
 echo ============================
@@ -30,16 +30,22 @@ chmod a+x device/motorola/odessa/applyPatches.sh
 # Set up build environment
 . build/envsetup.sh
 
+# Remove Jemalloc
+rm -rf external/jemalloc_new
+
+# Clone Jemalloc
+git clone https://github.com/thz11/android_external_jemalloc-new.git -b 14.0 external/jemalloc_new
+
 # Clone PrivateKeys
 git clone https://github.com/diasthiago11/keysz.git -b main vendor/lineage-priv/keys
 
 echo ====== Envsetup Done =======
 
 # Lunch                                                                     
-lunch pixelstar_odessa-userdebug
+lunch lineage_odessa-userdebug
 
 # Clean
 make installclean
 
 # Build
-mka bacon -j$(nproc --all)
+m bacon -j$(nproc --all)

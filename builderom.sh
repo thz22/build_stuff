@@ -36,7 +36,7 @@ git clone https://github.com/diasthiago11/keysz.git -b main vendor/lineage-priv/
 echo ====== Envsetup Done =======
 
 # Lunch                                                                     
-lunch lineage_odessa-userdebug
+breakfast odessa
 
 # Clean
 make installclean

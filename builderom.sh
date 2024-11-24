@@ -30,12 +30,6 @@ chmod a+x device/motorola/odessa/applyPatches.sh
 # Set up build environment
 . build/envsetup.sh
 
-# Remove Jemalloc
-rm -rf external/jemalloc_new
-
-# Clone Jemalloc
-git clone https://github.com/thz11/android_external_jemalloc-new.git -b 14.0 external/jemalloc_new
-
 # Clone PrivateKeys
 git clone https://github.com/diasthiago11/keysz.git -b main vendor/lineage-priv/keys
 

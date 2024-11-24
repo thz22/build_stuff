@@ -35,7 +35,7 @@ git clone https://github.com/diasthiago11/keysz.git -b main vendor/lineage-priv/
 
 echo ====== Envsetup Done =======
 
-# Lunch                                                                     
+# breakfast                                                                  
 breakfast odessa
 
 # Clean

@@ -36,6 +36,9 @@ chmod a+x device/motorola/odessa/applyPatches.sh
 # Clone PrivateKeys
 git clone https://github.com/thz22/keysz.git -b main vendor/lineage-priv/keys
 
+# Dolby
+git clone -b v1.1-daxappui https://github.com/userariii/hardware_Motorola_Dolby.git hardware/Motorola/Dolby
+
 echo ====== Envsetup Done =======
 
 # breakfast                                                                  

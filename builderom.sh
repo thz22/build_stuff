@@ -34,7 +34,7 @@ chmod a+x device/motorola/odessa/applyPatches.sh
 rm -rf hardware/motorola
 
 # Dolby
-git clone https://github.com/crdroidandroid/android_hardware_motorola.git -b 15.0 hardware/motorola
+git clone https://github.com/crdroidandroid/android_hardware_motorola.git -b v-15.0 hardware/motorola
 
 # Set up build environment
 . build/envsetup.sh

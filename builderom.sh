@@ -36,12 +36,6 @@ chmod a+x device/motorola/odessa/applyPatches.sh
 # Clone PrivateKeys
 git clone https://github.com/thz22/keysz.git -b main vendor/lineage-priv/keys
 
-# resguard
-rm -rf hardware/motorola
-
-# Dolby
-git clone https://github.com/crdroidandroid/android_hardware_motorola.git -b 15.0 hardware/motorola
-
 echo ====== Envsetup Done =======
 
 # breakfast                                                                  

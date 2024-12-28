@@ -30,6 +30,12 @@ git clone https://thjr5965@bitbucket.org/pops11s/vendor_gms_vic.git vendor/gms -
 # chmod
 chmod a+x device/motorola/odessa/applyPatches.sh
 
+# resguard
+rm -rf hardware/motorola
+
+# Dolby
+git clone https://github.com/crdroidandroid/android_hardware_motorola.git -b v-15.0 hardware/motorola
+
 # Set up build environment
 . build/envsetup.sh
 

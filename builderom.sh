@@ -30,6 +30,12 @@ git clone https://github.com/AzyrRuthless/KernelSU-Next.git -b next kernel/motor
 # chmod
 chmod a+x device/motorola/odessa/applyPatches.sh
 
+# TestO3
+rm -rf build/soong
+
+# Clone O3
+git clone https://github.com/thz22/android_build_soong.git -b lineage-21.0 build/soong
+
 # Set up build environment
 . build/envsetup.sh
 

@@ -25,7 +25,7 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=ture
 echo ======= Export Done ======
 
 # KSU
-git clone https://github.com/AzyrRuthless/KernelSU-Next.git -b next kernel/motorola/sm6150/KernelSU-Next
+git clone https://github.com/thz22/KernelSU-Next.git -b next kernel/motorola/sm6150/KernelSU-Next
 
 # chmod
 chmod a+x device/motorola/odessa/applyPatches.sh
